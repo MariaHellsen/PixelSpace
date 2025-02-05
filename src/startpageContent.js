@@ -50,6 +50,47 @@ export const createHtmlStartpage = () => {
   imgSection.append(imgContainer1, imgContainer2, imgContainer3);
 
   const textSection = document.createElement("section");
+  textSection.id = "textSectionStartpage";
+  const text = document.createElement("p");
+  text.innerHTML =
+    "Över <strong>10 års</strong> erfarenhet och <strong>300+</strong> genomförda projekt! </br> Låt oss ta hand om din design och programmering.";
 
-  main.append(introContainer, imgSection);
+  const serviceContainer = document.createElement("div");
+  serviceContainer.id = "service";
+
+  const checkIcon1 = document.createElement("i");
+  checkIcon1.classList.add("fa-solid", "fa-check");
+
+  const checkIcon2 = document.createElement("i");
+  checkIcon2.classList.add("fa-solid", "fa-check");
+
+  const checkIcon3 = document.createElement("i");
+  checkIcon3.classList.add("fa-solid", "fa-check");
+
+  const checkIcon4 = document.createElement("i");
+  checkIcon4.classList.add("fa-solid", "fa-check");
+
+  const design = document.createElement("p");
+  design.innerHTML = "Webbdesign";
+  const develop = document.createElement("p");
+  develop.innerHTML = "Webbutveckling";
+  const ux = document.createElement("p");
+  ux.innerHTML = "UX & design";
+  const copywriting = document.createElement("p");
+  copywriting.innerHTML = "Copywriting";
+
+  serviceContainer.append(
+    checkIcon1,
+    design,
+    checkIcon2,
+    develop,
+    checkIcon3,
+    ux,
+    checkIcon4,
+    copywriting
+  );
+
+  textSection.append(text, serviceContainer);
+
+  main.append(introContainer, imgSection, textSection);
 };
