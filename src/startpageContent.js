@@ -90,7 +90,11 @@ export const createHtmlStartpage = () => {
     copywriting
   );
 
-  textSection.append(text, serviceContainer);
+  const btnContact2 = document.createElement("button");
+  btnContact2.classList.add("btn", "btnPrimary");
+  btnContact2.innerHTML = "Kontakta oss";
+
+  textSection.append(text, serviceContainer, btnContact2);
 
   main.append(introContainer, imgSection, textSection);
 };
