@@ -5,7 +5,14 @@
   --accent-color: #071ed9; /*ex; underlines på länkar i nav*/
   --white: #ffffff; /*ex; bakgrundfärg eller textfärg på blå eller mörk bakgrund*/
 }
-header{
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
   background-color: var(--primary-color);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,13 +26,13 @@ li a {
   text-decoration: none;
 }
 
-.container{
+.container {
   max-width: 1224px;
   width: 92%;
   margin: 0 auto;
 }
 
-.navbar{
+.navbar {
   background-color: var(--primary-color);
   min-height: 70px;
   display: flex;
@@ -34,31 +41,31 @@ li a {
   font-size: 20px;
 }
 
-.nav-branding{
+.nav-branding {
   font-size: 2rem;
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
 
-.nav-link{
+.nav-link {
   transition: 0.3s ease-out;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: dodgerblue;
 }
 
-.hamburger{
+.hamburger {
   display: none;
   cursor: pointer;
 }
 
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -68,22 +75,22 @@ li a {
   background-color: var(--accent-color);
 }
 
-@media(max-width:1024px){
-  .hamburger{
+@media (max-width: 1024px) {
+  .hamburger {
     display: block;
   }
 
-  .hamburger.active .bar:nth-child(2){
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger.active .bar:nth-child(1){
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger.active .bar:nth-child(3){
+  .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-menu{
+  .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
@@ -95,12 +102,11 @@ li a {
     transition: 0.3s;
   }
 
-  .nav-item{
+  .nav-item {
     margin: 16px 0;
   }
 
-  .nav-menu.active{
+  .nav-menu.active {
     left: 0;
   }
-
 }
