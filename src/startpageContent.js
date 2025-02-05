@@ -25,5 +25,31 @@ export const createHtmlStartpage = () => {
     btnReadMore,
     btnContact
   );
-  main.appendChild(introContainer);
+
+  const imgSection = document.createElement("section");
+  imgSection.id = "imgSection";
+
+  const imgContainer1 = document.createElement("div");
+  imgContainer1.className = "grid-item-1";
+  const img1 = document.createElement("img");
+  img1.src = "assets/computer.jpg";
+  imgContainer1.appendChild(img1);
+
+  const imgContainer2 = document.createElement("div");
+  imgContainer2.className = "grid-item-2";
+  const img2 = document.createElement("img");
+  img2.src = "assets/ux.jpg";
+  imgContainer2.appendChild(img2);
+
+  const imgContainer3 = document.createElement("div");
+  imgContainer3.className = "grid-item-3";
+  const img3 = document.createElement("img");
+  img3.src = "assets/think.jpg";
+  imgContainer3.appendChild(img3);
+
+  imgSection.append(imgContainer1, imgContainer2, imgContainer3);
+
+  const textSection = document.createElement("section");
+
+  main.append(introContainer, imgSection);
 };
