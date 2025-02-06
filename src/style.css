@@ -322,6 +322,47 @@ li a {
   }
 }
 
+#footer {
+  padding: 5% 5% 2% 5%;
+  margin-top: 5%;
+  background-color: #000000;
+  color: var(--white);
+
+  a {
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .adress {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.2rem;
+    width: 33%;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .socialmedia {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 30px;
+    width: 33%;
+  }
+}
+
 @media (max-width: 1024px) {
   .hamburger {
     display: block;
