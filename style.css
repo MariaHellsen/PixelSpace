@@ -7,16 +7,23 @@ body {
   width: 100%;
   z-index: 3;
 }
+.header nav {
+  position: relative;
+  margin-top: -20px;
+}
 .header > .logo > img {
   width: 200px;
 }
 .header ul {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none; 
   overflow: hidden;
+  margin-top: -130px;
 }
 .header li a {
+  position: relative;
   display: block;
   padding: 20px 20px;
   text-decoration: none;
@@ -26,12 +33,9 @@ body {
   background-color: #f4f4f4;
 }
 
-.header .logo {
+.header > nav > .logo > img{
   display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
+  width: 400px;
 }
 
 /* menu */
@@ -118,8 +122,5 @@ body {
     clear: none;
     float: right;
     max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
   }
 }
