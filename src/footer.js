@@ -17,12 +17,21 @@ export const createHtmlFooter = () => {
 
   const facebook = document.createElement("i");
   facebook.classList.add("fa-brands", "fa-facebook", "fa-lg");
+  facebook.addEventListener("click", () => {
+    window.open("https://www.facebook.com/?locale=sv_SE", "_blank");
+  });
 
   const instagram = document.createElement("i");
   instagram.classList.add("fa-brands", "fa-instagram", "fa-lg");
+  instagram.addEventListener("click", () => {
+    window.open("https://www.instagram.com/", "_blank");
+  });
 
   const linkedin = document.createElement("i");
   linkedin.classList.add("fa-brands", "fa-linkedin", "fa-lg");
+  linkedin.addEventListener("click", () => {
+    window.open("https://www.linkedin.com", "_blank");
+  });
 
   const copyright = document.createElement("p");
   copyright.className = "copyright";
