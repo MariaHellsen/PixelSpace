@@ -431,3 +431,79 @@ li a {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
+
+/* -----------------contact-------- */
+.contact-bg{
+  background-image: url(/Images/contact1.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.contact-bg h1 {
+
+font-size: 3em;
+}
+.contact-bg p {
+  font-size: 2em;
+  margin-top: 5px;
+  max-width: fit-content;
+  }
+  #form-heading{
+    color: var(--text-color);
+    line-height: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+ 
+    .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 25px;
+  }
+  input, textarea, button {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    border-radius: 5px;
+    margin-left: 25px;
+  }
+  button {
+    background-color:var(--accent-color);
+    color:var(--text-color);
+    cursor: pointer;
+    width: 200px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: #010b46;
+    margin-left: 20%;
+  }
+  button:hover {
+    background-color:var(--white);
+  } 
+ 
+  #contact-form input, #contact-form textarea {
+    width: 100%; 
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; 
+  }
+
+
+
+  
