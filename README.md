@@ -41,3 +41,4 @@
 * Gör en pull request 
 * Gör en merge när koden är godkänd 
 * Ta bort din branch efter en merge 
+

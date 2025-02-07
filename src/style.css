@@ -432,8 +432,108 @@ li a {
   margin-bottom: 10px;
 }
 
+
 /* -----------------contact-------- */
 .contact-bg{
+
+/* About Us section */
+#aboutUs {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#aboutUs h2 {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  background: none;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+#history {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.story {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+
+#history img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#team {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#team h2 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  background: none;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid var(--accent-color);
+}
+
+.teamName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.role {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.contact-bg {
   background-image: url(/Images/contact1.jpg);
   height: 60vh;
   background-size: cover;
@@ -448,13 +548,13 @@ li a {
   padding: 10px;
 }
 .contact-bg h1 {
-
-font-size: 3em;
+  font-size: 3em;
 }
 .contact-bg p {
   font-size: 2em;
   margin-top: 5px;
   max-width: fit-content;
+
   }
   #form-heading{
     color: var(--text-color);
@@ -503,7 +603,3 @@ font-size: 3em;
     border-radius: 5px;
     text-align: center; 
   }
-
-
-
-  

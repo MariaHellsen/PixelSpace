@@ -33,11 +33,17 @@ export const createHtmlFooter = () => {
     window.open("https://www.linkedin.com", "_blank");
   });
 
+  const github = document.createElement("i");
+  github.classList.add("fa-brands", "fa-github", "fa-lg");
+  github.addEventListener("click", () => {
+    window.open("https://github.com/", "_blank");
+  });
+
   const copyright = document.createElement("p");
   copyright.className = "copyright";
   copyright.innerHTML = "Copyright &#169; PixelSpace 2025";
 
-  socialContainer.append(facebook, instagram, linkedin);
+  socialContainer.append(facebook, instagram, linkedin, github);
   adressContainer.append(adress, mail, tel);
 
   const socialAndAdressContainer = document.createElement("div");
