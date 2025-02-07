@@ -360,6 +360,7 @@ li a {
     text-align: right;
     gap: 30px;
     width: 33%;
+    cursor: pointer;
   }
 }
 

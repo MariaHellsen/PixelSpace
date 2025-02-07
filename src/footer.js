@@ -17,18 +17,33 @@ export const createHtmlFooter = () => {
 
   const facebook = document.createElement("i");
   facebook.classList.add("fa-brands", "fa-facebook", "fa-lg");
+  facebook.addEventListener("click", () => {
+    window.open("https://www.facebook.com/?locale=sv_SE", "_blank");
+  });
 
   const instagram = document.createElement("i");
   instagram.classList.add("fa-brands", "fa-instagram", "fa-lg");
+  instagram.addEventListener("click", () => {
+    window.open("https://www.instagram.com/", "_blank");
+  });
 
   const linkedin = document.createElement("i");
   linkedin.classList.add("fa-brands", "fa-linkedin", "fa-lg");
+  linkedin.addEventListener("click", () => {
+    window.open("https://www.linkedin.com", "_blank");
+  });
+
+  const github = document.createElement("i");
+  github.classList.add("fa-brands", "fa-github", "fa-lg");
+  github.addEventListener("click", () => {
+    window.open("https://github.com/", "_blank");
+  });
 
   const copyright = document.createElement("p");
   copyright.className = "copyright";
   copyright.innerHTML = "Copyright &#169; PixelSpace 2025";
 
-  socialContainer.append(facebook, instagram, linkedin);
+  socialContainer.append(facebook, instagram, linkedin, github);
   adressContainer.append(adress, mail, tel);
 
   const socialAndAdressContainer = document.createElement("div");
