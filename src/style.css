@@ -431,7 +431,6 @@ li a {
   margin-bottom: 10px;
 }
 
-
 /* About Us section */
 #aboutUs {
   max-width: 1100px;
@@ -529,7 +528,7 @@ li a {
   opacity: 0.9;
 }
 
-.contact-bg{
+.contact-bg {
   background-image: url(/Images/contact1.jpg);
   height: 60vh;
   background-size: cover;
@@ -544,7 +543,7 @@ li a {
   padding: 10px;
 }
 .contact-bg h1 {
-font-size: 3em;
+  font-size: 3em;
 }
 .contact-bg p {
   font-size: 2em;
@@ -601,5 +600,3 @@ button:hover {
   border-radius: 5px;
   text-align: center;
 }
-  }
- 
