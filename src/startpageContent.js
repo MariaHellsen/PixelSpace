@@ -13,6 +13,10 @@ export const createHtmlStartpage = () => {
 
   const btnReadMore = document.createElement("button");
   btnReadMore.classList.add("btn", "btnSecondary");
+  btnReadMore.addEventListener("click", () => {
+    alert("Kommer snart!");
+  });
+
   const btnContact = document.createElement("button");
   btnContact.classList.add("btnPrimary", "btn");
   btnReadMore.innerHTML = "Läs mer";

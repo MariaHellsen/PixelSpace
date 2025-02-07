@@ -1,4 +1,6 @@
 
+import { createHtmlFooter } from "./footer";
+
 const formContainer = document.getElementById("form-container");
 const formHeading = document.createElement("h2");
 formHeading.innerHTML+= `Send Us a Message <br>-We'll Get Back to You Right Away!`;
@@ -110,4 +112,9 @@ const lastNameGroup = document.createElement('div');
       else {
         alert('Please fill out all fields.');
       }
+
     });
+
+    
+    createHtmlFooter();
+
