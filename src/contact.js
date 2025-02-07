@@ -115,6 +115,6 @@ const lastNameGroup = document.createElement('div');
 
     });
 
-    });
+    
     createHtmlFooter();
 
